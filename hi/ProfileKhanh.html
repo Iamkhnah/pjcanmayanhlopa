@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile's Khanh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="./lib.js"></script>
+</head>
+<header>
+    <div class="top-bar">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="https://github.com/Iamkhnah">Github</a></li>
+                <li><a href="https://www.facebook.com/pham.khanh.798774">Facebook</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+    <div class="form1">
+        <div id="background">
+        </div>
+    </div>
+    <div class="form2">
+        <div class="avata">
+            <img src="./cat.jpg" class="avata_jpg" id="imgne">
+            <div class="Name">
+                <label>Phạm Khánh ( ItOnltz 愛してます♡)</label>
+                <p>I am p.Khanh愛してます♡ <br>Coder / Scripter / Skidder <br> Programming Languages: Lua, Luau, Python, Csharp, Front End</p>
+            </div>
+            <div class="button">
+                <img src="./icon_hutaochibi.png" id="buttonne">
+            </div>
+        </div>
+    </div>
+    <div class="form3">
+        <div class="text_label"><h1>Programming Languages</h1></div>
+        <div class="hihihi">
+            <div class="FormPL" data-tilt data-tilt-max="10" data-tilt-speed="600" data-tilt-perspective="500">
+                <div class="ImageAvata1" data-tilt data-tilt-max="10" data-tilt-speed="300" data-tilt-perspective="500">
+                    <img src="./avt_tag1.jpg">
+                </div>
+                <div class="Ten1">
+                    <h2>Phạm Khánh</h2>
+                </div>
+                <div class="lua">
+                    <div class="text1">
+                        <h2>Lua: <div class="range1">
+                            <div class="box1">50%</div>
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+                <div class="python">
+                    <div class="text2">
+                        <h2>Python: <div class="range2">
+                            <div class="box2">10%</div>
+                            </div></h2>
+                    </div>
+                </div>
+                <div class="csharp">
+                    <div class="text3">
+                        <h2>Csharp: <div class="range3">
+                            <div class="box3">10%</div>
+                            </div></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>@Copyright 2025. Made by Khanh愛してます♡<br>Host by Sxionaxgamer</p>
+    <style>
+        *, body {
+            background-color: rgb(33, 33, 33);
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        .form1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("./bg.png");
+            background-size: cover;
+            background-position: center;
+            width: 1200px;
+            height: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 50px -40px rgb(255, 255, 255);
+
+            z-index: 1;
+            margin-top: 5px;
+        }
+        .avata > img {
+            width: 230px;
+            border-radius: 100%;
+            border: 3px solid rgb(74, 73, 73);
+            padding: 3px;
+            position: relative;
+            top: -50px;
+            transition: filter 0.2s ease-in-out, border 0.2s ease-in-out;
+            z-index: 2;
+        }
+        .avata_jpg:hover {
+            filter: brightness(1.2);
+            border: 3px solid rgb(100, 52, 90);
+        }
+        .avata {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+            align-items: center;
+            z-index: 2;
+            position: relative;
+            top: -10px;
+            background-color: rgb(37, 37, 37);
+            border-radius: 10px;
+            /* margin-right: 50px; */
+        }
+        .navbar {
+            margin-top: 0;
+            padding: 0;
+
+        }
+        .button {
+            background: transparent;
+        }
+        .button > img {
+            position: relative;
+            width: 70px;
+            margin-left: 250px;
+            animation: rotationhutao 5s infinite linear;
+            transform: scale(1);
+            transition: transform 0.2s ease-in-out;
+            background: none;
+        }
+        .button > img:hover {
+            transform: scale(1.1);
+        }
+        .form3 {
+            animation: fadeinne 1s linear;
+            animation-timeline: view();
+            animation-range: entry 0;
+        }
+        .hihihi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .FormPL {
+            width: 550px;
+            height: 700px;
+            background: linear-gradient(180deg, rgb(140, 48, 105), rgb(57, 19, 42));
+            border-radius: 10px;
+            position: relative;
+            border: 3px solid rgb(255, 0, 153);
+            animation: fadeinne 1s linear;
+            animation-timeline: view();
+            margin-bottom: 200px;
+            margin-top: 50px;
+            animation-range: entry 0;
+            transition: transform 0.2s ease-in-out;
+        }
+        .FormPL:hover {
+            transform: scale(1.5);
+        }
+        @keyframes fadeinne {
+            from {
+
+                transform: scale(0.5);
+                top: 100px;
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                top: 0px;
+                opacity: 1;
+            }
+        }
+        @keyframes rotationhutao {
+            0% {
+                rotate: 0deg;
+            }
+            25% {
+                rotate: 90deg;
+            }
+            50% {
+                rotate: 180deg;
+            }
+            75% {
+                rotate: 270deg;
+            }
+            100% {
+                rotate: 360deg;
+            }
+        }
+        .range1 {
+            width: 500px;
+            height: 20px;
+            background-color: rgb(179, 203, 245);
+            border-radius: 100px;
+            position: relative;
+        }
+        .range1::after {
+            content: "50%";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background-color: rgb(69, 103, 162);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            border-radius: 100px;
+            animation: luagay 2s linear;
+        }
+
+        .range2 {
+            width: 500px;
+            height: 20px;
+            background-color: rgb(179, 203, 245);
+            border-radius: 100px;
+            position: relative;
+        }
+        .range2::after {
+            content: "10%";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 100%;
+            background-color: rgb(162, 69, 75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            border-radius: 100px;
+            animation: pyvacsgay 2s linear;
+        }
+        .python {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2 {
+            display: none;
+        }
+
+        .range3 {
+            width: 500px;
+            height: 20px;
+            background-color: rgb(179, 203, 245);
+            border-radius: 100px;
+            position: relative;
+        }
+        .range3::after {
+            content: "10%";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 100%;
+            background-color: rgb(162, 140, 69);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            border-radius: 100px;
+            animation: pyvacsgay 2s linear;
+
+        }
+        .csharp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box3 {
+            display: none;
+        }
+        p {
+            color: white;
+        }
+        @keyframes luagay {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 50%;
+            }
+        }
+
+        @keyframes pyvacsgay {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 20%;
+            }
+        }
+
+        .box1 {
+            display: none;
+        }
+        .ImageAvata1 {
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ImageAvata1 > img {
+            width: 300px;
+            margin-top: 30px;
+            background: none;
+            border-radius: 10px;
+            border: 2px solid rgb(255, 106, 210);
+        }
+        .text_label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Roboto", serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .text_label > h1 {
+            color: white;
+        }
+        .lua {
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text1 {
+            background: transparent;
+        }
+
+        .text1 > h2 {
+            background: none;
+            color: white;
+            font-family: "Afacad Flux", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0;
+        }
+
+        .python {
+            background: transparent;
+        }
+        .text2 {
+            background: transparent;
+        }
+
+        .text2 > h2 {
+            background: none;
+            color: white;
+            font-family: "Afacad Flux", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0;
+        }
+
+        .csharp {
+            background: transparent;
+        }
+        .text3 {
+            background: transparent;
+        }
+
+        .text3 > h2 {
+            background: none;
+            color: white;
+            font-family: "Afacad Flux", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0;
+        }
+
+        .Ten1 {
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Ten1 > h2 {
+            background: none;
+            color: white;
+            font-family: "Roboto", serif;
+            font-weight: 600;
+            font-style: normal;
+            text-shadow: 0px 0px 5px rgb(41, 41, 41),
+            0px 0px 5px,
+            0px 0px 10px,
+            0px 0px 15px rgb(255, 0, 153),
+            0px 0px 35px rgb(235, 87, 243);
+
+            /* margin-left: 50px; */
+        }
+        .form3 {
+            /* margin: 0;
+            padding: 0;
+            width: calc(auto - 50px);
+            height: 100px;
+            background-color: antiquewhite;
+            margin-top: 100px;
+            padding-bottom: 50px; */
+            margin-top: 50px;
+        }
+        .Name {
+            background: transparent;
+        }
+        .Name > p {
+            color: rgb(158, 158, 158);
+            margin-left: 30px;
+            background: none;
+        }
+        .Name > label {
+            color: white;
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 30px;
+            margin-left: 50px;
+            position: relative;
+            /* top: -50px; */
+            background: none;
+            text-shadow: 0px 0px 0px rgb(255, 0, 153);
+            transition: text-shadow 0.5s ease-in-out;
+        }
+
+        .Name > label:hover {
+            text-shadow: 0px 0px 5px red,
+            0px 0px 5px,
+            0px 0px 10px,
+            0px 0px 15px,
+            0px 0px 25px rgb(255, 0, 153);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: -10px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Căn giữa các mục theo chiều dọc */
+            background-color: rgb(42, 42, 42);
+            z-index: 2;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            background-color: rgb(42, 42, 42);
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 9px;
+            border-radius: 10px;
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-style: normal;
+            transition: background-color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            background-color: rgb(49, 49, 49);
+        }
+
+    </style>
+    <script>
+        let index_gay = 1;
+        const img = document.getElementById('imgne');
+        const bg = document.getElementById('background')
+        const img_path_list = [
+            "./cat.jpg", "./alime.jpg"
+        ]
+        const bg_path_list = [
+            "./bg.png", "./anhnen.png"
+        ]
+        function change_avata() {
+            if (index_gay >= 2) {
+                index_gay = 0
+            }
+            img.src = img_path_list[index_gay]
+            bg.style.backgroundImage = `url('${bg_path_list[index_gay]}')`;
+            index_gay = index_gay + 1
+        }
+        const buttonne = document.getElementById('buttonne');
+        buttonne.addEventListener('click', function() {
+            console.log("wtf gay clicked button");
+            console.log(index_gay);
+            change_avata()
+        });
+    </script>
+    <script type="text/javascript" src="./lib.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".box"), {
+            max: 15,
+            speed: 400
+        });
+        VanillaTilt.init(document.querySelector(".developer"), {
+            max: 15,
+            speed: 400
+        });
+        
+    </script>
+</body>
+</html>
